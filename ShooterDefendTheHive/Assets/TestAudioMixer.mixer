@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: TestAudioMixer
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300002}
+  m_Snapshots:
+  - {fileID: 24500006}
+  m_StartSnapshot: {fileID: 24500006}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters: []
+  m_AudioMixerGroupViews:
+  - guids:
+    - 8765234dec615a841a056c378c393756
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500006}
+--- !u!243 &24300002
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 8765234dec615a841a056c378c393756
+  m_Children: []
+  m_Volume: 65d1aef77a036e04999a9d95a2912246
+  m_Pitch: 502984c3bbf0cee4d9c4a3e6a54b746a
+  m_Effects:
+  - {fileID: 24400004}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400004
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 8dc3c9a3afe546b4db9c2dcb73d952f0
+  m_EffectName: Attenuation
+  m_MixLevel: f1dd9f05844daf94bb3351a0d924d094
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500006
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Snapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: d84ae74d8bb670f4dbe169561c702b9a
+  m_FloatValues:
+    cb7c0501c279ebf4d847a03d872aac5f: 10
+    502984c3bbf0cee4d9c4a3e6a54b746a: 1
+    884db895013c591418f8548572f4cad3: 1024
+    dfd142a7f67d1a34982eb7a32d915df6: 1
+    d0ea0fb712b3340498f3d1ef6284808f: 0
+    65d1aef77a036e04999a9d95a2912246: 5
+    6d6126087e793424db2316a5949d99ea: 0
+    4d17117977b03a24c87cbf531eb45812: 1
+    f261450b71736eb4099f0423fe55bc3c: 0.99
+    e4f2f85b18ea97645aa8c90798d755ed: 1
+    b969f74e177687843a0d8631d7b6c063: 0.42
+    e1db9c2f64385174897e5488147fe238: -10
+  m_TransitionOverrides: {}
