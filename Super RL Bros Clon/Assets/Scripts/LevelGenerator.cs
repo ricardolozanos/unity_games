@@ -71,7 +71,7 @@ public class LevelGenerator : MonoBehaviour {
 
     public void RemoveAllTheBlocks()
     {
-        while (currentBlocks.Count > 0)
+        while (currentBlocks.Count > 1)
         {
             RemoveOldestLevelBlock();
         }
@@ -79,7 +79,7 @@ public class LevelGenerator : MonoBehaviour {
 
     public void GenerateInitialBlocks()
     {
-        for(int i = 0; i < 2; i++)
+        for(int i = 0; i < 3; i++)
         {
             AddLevelBlock();
         }
